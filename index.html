@@ -13,12 +13,20 @@
   <body>
     <h1>A random To-Do List Website</h1>
     <input type="text" id="userInput" placeholder="Add a task by typing here!">
-    <button id = "button" > Click here to add the task!</button>
+    <button id = "button" onClick=addTask() > Click here to add the task!</button>
+
+
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <fieldset>
-      <legend>Write down your list of tasks below!</legend>
+    <fieldset id="todoListfSet">
+      <legend>Write down your list of tasks below!</legend>    
+      <div id="placeholder">
+        <div id="template">
+          <input type="checkbox" id="text" name="interest" value="text">
+          <label for="text"></label>
+         </div>
+      </div>
       <div>
         <input type="checkbox" id="coding" name="interest" value="coding">
         <label for="coding">Coding</label>
