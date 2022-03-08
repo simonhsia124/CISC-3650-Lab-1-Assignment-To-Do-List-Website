@@ -20,9 +20,9 @@ function addTask() {
     ul.appendChild(li);
 
     
-    
+
     if (inputValue === '') {
-        alert("You must write something!");
+        alert("You must write something or you won't know what task your doing!");
       } else {
         document.getElementById("userList").appendChild(li);
       }
