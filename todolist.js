@@ -1,26 +1,15 @@
 
 //Function created to add a task to the task list
 function addTask() {
-    var ul = document.getElementById("userList");
-    var li = document.createElement("li");
-    var createCheckbox = document.createElement('input');
-    /*
-    createCheckbox.type = "checkbox";
-    createCheckbox.value = 1;
-    createCheckbox.name = "todo[]";
-    */
-    
-    var inputValue = document.getElementById("userInput").value;
-    var t = document.createTextNode(inputValue);
-    //li.appendChild(createCheckbox);
+    let ul = document.getElementById("userList");
+    let li = document.createElement("li");
+    let inputValue = document.getElementById("userInput").value;
+    let t = document.createTextNode(inputValue);
+    //li.appendChild(create Checkbox);
     li.innerHTML += "<input type = 'checkbox' id = 'checkbox' name = 'Checkbox'>";
     li.appendChild(t);
     li.innerHTML += "<label for='DueDate'>Due date: </label><input type='date' id='DueDate' name='DueDate'>";
-
     ul.appendChild(li);
-
-    
-
     if (inputValue === '') {
         alert("You must write something or you won't know what task your doing!");
       } else {
