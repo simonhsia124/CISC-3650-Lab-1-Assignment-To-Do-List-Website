@@ -7,9 +7,14 @@ body {
     background-color: #0C6991;
 }
 
+ul li{
+    width: 100px;
+}
+
 #button1 {
     font-style: italic;
     background-color: green;
+
   
 }
 #button2 {
