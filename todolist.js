@@ -3,11 +3,23 @@
 function addTask() {
     var ul = document.getElementById("userList");
     var li = document.createElement("li");
-    //var children = ul.children.length + 1;
+    var createCheckbox = document.createElement('input');
+    /*
+    createCheckbox.type = "checkbox";
+    createCheckbox.value = 1;
+    createCheckbox.name = "todo[]";
+    */
+    
     var inputValue = document.getElementById("userInput").value;
     var t = document.createTextNode(inputValue);
+    //li.appendChild(createCheckbox);
+    li.innerHTML += "<input type = 'checkbox' id = 'checkbox' name = 'Checkbox'>";
     li.appendChild(t);
-    ul.appendChild(li)
+    li.innerHTML += "<label for='DueDate'>Due date: </label><input type='date' id='DueDate' name='DueDate'>";
+
+    ul.appendChild(li);
+
+    
     
     if (inputValue === '') {
         alert("You must write something!");
@@ -17,8 +29,15 @@ function addTask() {
       document.getElementById("userInput").value = "";
 
 }
-/*
-//Function created to delete a task from the task list
-function deleteTask() {
 
-} */
+//Function created to delete a task from the task list
+function deleteSingleTask() {
+  var uList = document.getElementById("userList");
+  uList.removeChild(userList.lastElementChild);
+
+}
+//Function created to delete all tasks from the task list
+function deleteAllTasks() {
+  var uList = document.getElementById("userList");
+  uList.innerHTML = "";
+}
