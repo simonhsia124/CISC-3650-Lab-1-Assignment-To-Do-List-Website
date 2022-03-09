@@ -3,11 +3,17 @@ h1 {
     background-color:  #D8E7EB;
     text-align: center;
 }
+h2 {
+    color: white;
+}
+ul {
+    color: white;
+}
 body {
     background-color: #0C6991;
 }
 
-ul li{
+#userList{
     width: 100px;
 }
 

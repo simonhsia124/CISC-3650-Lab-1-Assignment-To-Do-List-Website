@@ -13,9 +13,9 @@
   <body>
     <h1>A random To-Do List Website</h1>
     <input type="text" id="userInput" placeholder="Add a task by typing here!">
-    <button id = "button1" onclick = addTask() > Click here to add the task!</button>
-    <button id = "button2" onclick = deleteSingleTask() > Click here to delete a task!</button>
-    <button id = "button3" onclick = deleteAllTasks() > Click here to delete all tasks!</button>
+    <button id = "button1" onclick = addTask() > Click here to add the task!</button> <!-- Button to add a task-->
+    <button id = "button2" onclick = deleteSingleTask() > Click here to delete a task!</button> <!-- Button to delete a single task-->
+    <button id = "button3" onclick = deleteAllTasks() > Click here to delete all tasks!</button> <!-- Button to delete all tasks-->
 
     <script src = "todolist.js"></script>
     <!-- Option 1: Bootstrap Bundle with Popper -->
@@ -27,7 +27,35 @@
     </ul>
     
     <p>
-      How to use this to do list
+      <h2>How to use this to do list</h2>
+      <ul>  
+        In order to add a task: 
+        <li>Write the task in the textbox and then click the green button that saids "Click here to add the task!"</li> 
+        <li>Made a mistake and need to delete one task or all tasks?</li>  
+        <li>1. Click the yellow button that saids "Click here to delete a task!" to delete a single task</li>
+        <li>2. Click the red button that saids "Click here to delete all tasks!" to delete all tasks</li>
+        <li> Reminder: The Yellow Button only deletes the most recent task you made and the Red button deletes all the tasks
+          you have made</li>
+      </ul>
+      <ul>
+
+        Once a task has been made:
+        <li>You have three things to do once a task is made:</li>
+        <li>        1. There is a checkbox next to the task you have created and you can only click that checkbox to
+          indicate whether you have completed your task or not</li>
+        <li>2. There is a way for you to set a due date of your task </li>
+        <li>3. You can set the importance level of your tasks with 3 colors</li>
+        <li>        
+          (Red = Very Important Task) 
+          (Yellow = Moderately important) 
+          (Green = Not very important but should still be considered)</li>
+        
+
+        
+
+      </ul>
+
+
     </p>
 
   </body>
