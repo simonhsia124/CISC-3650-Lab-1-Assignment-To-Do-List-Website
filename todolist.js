@@ -5,19 +5,19 @@ function addTask() {
     let li = document.createElement("li");
     let inputValue = document.getElementById("userInput").value;
     let t = document.createTextNode(inputValue);
-    //li.appendChild(create Checkbox);
-    li.innerHTML += "<input type = 'checkbox' id = 'checkbox' name = 'Checkbox'>";
+    li.innerHTML += "<input type = 'checkbox' id = 'checkbox' name = 'Checkbox'>"; //Creates a checkbox
     li.appendChild(t);
+    //Creates the date
     li.innerHTML += "<label for='DueDate'>Due date: </label><input type='date' id='DueDate' name='DueDate'>";
+    //Creates the color selector
     li.innerHTML += "<label for = 'selectColor'> Select a color to set the importance level of each task: </label> <select onchange='this.style.backgroundColor=this.value'> <option value='red'>Red </option> <option value='yellow'> Yellow</option> <option value='green'>Green</option> </select>";
     ul.appendChild(li);
+    //Sends a warning message if a user doesn't type a task and creates an empty one
     if (inputValue === '') {
         alert("You must write something or you won't know what task your doing!");
       } else {
         document.getElementById("userList").appendChild(li);
       }
-      document.getElementById("userInput").value = "";
-
 }
 
 //Function created to delete a task from the task list
