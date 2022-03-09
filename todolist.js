@@ -9,6 +9,7 @@ function addTask() {
     li.innerHTML += "<input type = 'checkbox' id = 'checkbox' name = 'Checkbox'>";
     li.appendChild(t);
     li.innerHTML += "<label for='DueDate'>Due date: </label><input type='date' id='DueDate' name='DueDate'>";
+    li.innerHTML += "<label for = 'selectColor'> Select a color to set the importance level of each task: </label> <select onchange='this.style.backgroundColor=this.value'> <option value='red'>Red </option> <option value='yellow'> Yellow</option> <option value='green'>Green</option> </select>";
     ul.appendChild(li);
     if (inputValue === '') {
         alert("You must write something or you won't know what task your doing!");
