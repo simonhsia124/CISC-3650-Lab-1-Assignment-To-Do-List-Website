@@ -1,4 +1,10 @@
-
+/* 
+Simon Hsia
+CISC 3650 
+Professor Kletenik
+To Do List Website project 
+due date : 3-10-2022
+*/
 //Function created to add a task to the task list
 function addTask() {
     let ul = document.getElementById("userList");
